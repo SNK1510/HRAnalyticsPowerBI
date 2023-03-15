@@ -17,7 +17,7 @@ This is a guided project by [Dhaval Patel](https://www.youtube.com/watch?v=ru1qe
 
 We are using Power BI to transform this data and address the above topics
 
-Data Tranformation:
+## Data Tranformation:
 This is how the data looks - There is a sheet that pertains to each month of data. Each sheet has the days of the month as columns
 ![image](https://user-images.githubusercontent.com/27859890/225420705-ce7ff96d-9736-4d29-a322-1163cae65d3d.png)
 
@@ -44,7 +44,7 @@ After all of this, we create a function that would encompass all the steps of th
 
 We now apply this function to our data and the transformations get applied to the other sheets (Rows of the table).
 
-Dashboarding:
+## Dashboarding:
 
 After transforming our data, we load our data to Power BI Workspace.
 We then use DAX Queries to create useful columns like 
@@ -76,17 +76,62 @@ WFH Total -
 
 ![image](https://user-images.githubusercontent.com/27859890/225428379-4ea79bf7-d765-4c5e-839f-72547475689d.png)
 
+WFH% - 
+
+![image](https://user-images.githubusercontent.com/27859890/225428794-9d713dd2-fc7c-4f43-9a01-cece2590507b.png)
 
 
+SL Total - 
+
+![image](https://user-images.githubusercontent.com/27859890/225428915-28be9735-d98e-41aa-abcf-41629875966d.png)
 
 
+SL% - 
 
-Elements of the Dashboard:
+![image](https://user-images.githubusercontent.com/27859890/225429023-b9b4d4dd-2bf9-4ef8-97c8-4f35676793a9.png)
+
+
+Presence % - 
+
+![image](https://user-images.githubusercontent.com/27859890/225429139-f86bc988-843b-4d76-adeb-7638f8c67206.png)
+
+### Elements of the Dashboard:
 
 1) Number Cards - To show summary % values of Presence, WFH, SL
 2) Slicer - We have sliced our time period by months and displayed them as tiles. This enables the user to filter by month
 3) Tables - We are showing 4 main tables . The first one shows summary percentage values for every employee. The second table shows detailed attendance values for every employee for every day of the chosen time period. The next two tables analyze presence% and SL% by days of the week
 4) Area charts showing Presence%, WFH%, SL% by Date
+
+
+### Final Dashboard - 
+
+
+![image](https://user-images.githubusercontent.com/27859890/225430095-4db97fe7-1476-48e6-bc81-f121bb61aaff.png)
+
+
+# Insights 
+
+- Presence is highest in April and least in May
+- WFH% is the highest in June
+- Overall attendance is the highest on Tuesday, followed by Monday and Wednesday
+- WFH is the highest on Fridays, followed by Thursday and then Monday
+
+We can use these insights for,
+
+- Project Release Planning - During client calls, we can use this historic data to decide when to work on high priority deployments or releases. Based on our data, it is preferable to make our release in April and better to avoid May. A project release is a critical event and we do not want to do it when there is a greater chance of employees going on leave or when there is general unavailibility
+
+- Hybrid Work planning - Our data says that most employees WFH on Fridays. If we need to plan out a Hybrid set-up, we can declare Fridays and Thursdays as WFH days and the rest of the days as on-site days. This can change from month-to-month/season too.
+
+- Resource planning - When we decide on a hybrid model, plan when employees need to attend office in person, they can cut down on expenditure like rental expenses, plan requirements of hourly wage workers on non-onsite days, cut down on electricity costs by shutting down lights, ACs in units where no employees are present on WFH days
+
+- Plan team building, group activities - Team leads can plan leadership visits/group events on days where there is a highest probabilty of both high presence and on-site work. In this case, Tuesday is the best day to collaborate in person
+
+## Conclusion
+So far, with the data we have, we have been able to get some high level overview on the attendance patterns of employees for a duration of 3 months. This analysis can be expanded to a year or more and presence can be analyzed by seasons and holidays too. Planning for the hybrid work model is one of the many use cases of HR Analytics. We can build similar analysis for resource planning for projects to identify backup team members or help managers decide if they need to get temporary hires or contractors.
+
+
+
+
 
 
 
